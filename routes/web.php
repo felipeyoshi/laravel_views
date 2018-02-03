@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/cursos', 'CursosController@index');
+
+Route::get('/cursos/{index}', 'CursosController@show');
